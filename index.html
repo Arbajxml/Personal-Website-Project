@@ -1,61 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Personal Site</title>
   <link href="styles.css" rel="stylesheet" />
 </head>
+
 <body>
   <header>
     <nav id="nav-bar">
-        <div id="nav-div1">
-          <div>
-            About
-          </div>
-          <div>
-            Projects
-          </div>
-          <div>
-            Contact
-          </div>
-        </div>
+      <div id="nav-div1">
+        <a href="#about-section">About</a>
+        <a href="#div-projects">Projects</a>
+        <a href="#contact-section">Contact</a>
+      </div>
     </nav>
   </header>
+
   <main id="card-container">
     <div id="div-main">
       <div id="pfp-div">
         <img src="Images/pfp.png" alt="Profile">
       </div>
-      <div class="card">
-        <h2>
-          About Me
-        </h2>
+      <div id="about-section">
+        <h2>About Me</h2>
         <hr>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat rerum voluptas explicabo deleniti eveniet laborum error sunt hic dolor. Possimus doloremque deleniti facilis, at placeat veniam aliquam aspernatur animi perferendis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aspernatur non necessitatibus modi! Ullam tempora odio et. Harum cum explicabo sapiente cumque ea, nemo commodi earum repellat! Ipsa, molestias nesciunt.</p>
+        <p>Hi! I'm Arbaj, a passionate tech enthusiast with a deep curiosity for exploring the world of technology. I'm
+          currently pursuing a degree in Computer Science at Delhi University, where I enjoy diving into everything from
+          coding and development to systems and architecture. <br>
+          When I'm not working on tech projects or learning something new, you'll find me immersed in light novels and
+          web novels—I love great storytelling as much as great software. <br>
+          Also... I use Arch btw! 😄</p>
       </div>
     </div>
   </main>
+
   <footer id="footer">
-    <div id="div-projects">
-      <h2 id="head-pro">Projects: </h2>
-      <div>
-        <br>
-        <h2 id="pro-head1">Ar's Restaurent: </h2>
-        <p id="pro-para">This was the final project I created for my HTML course at Codedex, <br> and it also marked the first time I published a project on GitHub. The project <br> is a simple restaurant menu featuring three dishes: Chicken Biryani, Shahi Paneer, and Chole Bhature. <br> I also included a form that allows users to add extra toppings and place an order.</p>
+    <section id="div-projects">
+      <div id="project-block">
+        <h2 id="head-pro">Projects</h2>
       </div>
-      <div>
-        <br>
-        <h2 id="pro-head1">Ar's Restaurent: </h2>
-        <p id="pro-para">This was the final project I created for my HTML course at Codedex, <br> and it also marked the first time I published a project on GitHub. The project <br> is a simple restaurant menu featuring three dishes: Chicken Biryani, Shahi Paneer, and Chole Bhature. <br> I also included a form that allows users to add extra toppings and place an order.</p>
+
+      <div id="project-1">
+        <h2 id="pro-head1">Ar's Restaurant</h2>
+        <p id="pro-para">
+          This was the final project I created for my HTML course at Codedex, and it also marked the
+          first time I published a project on GitHub. The project is a simple restaurant menu featuring three
+          dishes: Chicken Biryani, Shahi Paneer, and Chole Bhature. I also included a form that allows users to add
+          extra toppings and place an order.
+        </p>
+        <a href="https://github.com/Arbajxml/Ar-s-Restaurant.git" target="_blank" id="demo-link-1">
+          <div id="demo-button-1">Demo</div>
+        </a>
       </div>
-    </div>
-    <div id="div-foot">
-      <div><h2>Contact: </h2></div>
-      <br>
-        <a href="https://github.com/Arbajxml" id="link1">Github</a>
-        <a href="https://www.codedex.io/@xmlArbaj" id="link2">Codedex</a>
-    </div>
+
+      <div id="project-2">
+        <h2 id="pro-head2">Demo Project</h2>
+        <p id="pro-para2">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae facere ex sapiente
+          aspernatur odio, quasi, consectetur consequuntur voluptates cumque doloremque dolores recusandae ut vel
+          iste? Cum voluptates deserunt ratione.
+        </p>
+        <a href="https://github.com/Arbajxml/Ar-s-Restaurant.git" target="_blank" id="demo-link-2">
+          <div id="demo-button-2">Demo</div>
+        </a>
+      </div>
+    </section>
+
+    <section id="contact-section">
+      <div id="contact-left">
+        <h2>Contact Me</h2>
+        <p>I'd love to hear from you! Fill out the form below or reach out through my social media links.</p>
+      </div>
+
+      <div id="contact-form">
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+
+      <div id="contact-links">
+        <h3>Connect with Me</h3>
+        <ul>
+          <li><a href="https://github.com/Arbajxml" target="_blank">GitHub</a></li>
+          <li><a href="mailto:Demo@gmail.com">Email Me</a></li>
+        </ul>
+      </div>
+    </section>
   </footer>
 </body>
+
 </html>
