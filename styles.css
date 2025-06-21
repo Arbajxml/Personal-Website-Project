@@ -5,7 +5,7 @@
     color: #c29df1;
     font-weight: 400;
     font-size: 25px;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
 }
 
 #nav-bar {
@@ -74,21 +74,32 @@
 
 
 #div-projects {
-    background-color: #24273a;
     color: #c29df1;
+    background-color: #24273a;
     border-radius: 20px;
     padding: 4px 3px 4px 8px;
 }
 
 #div-foot {
+    background-color: #24273a;
     display: flex;
     gap: 2rem;
     color: #c29df1;
     margin-top: 10px;
+    border-radius: 20px;
+    padding: 4px 3px 4px 8px;
 }
 
 #link1, #link2 {
     color: #c29df1;
+}
+
+#pro-para {
+    color: #fff;
+}
+
+#pro-head1 {
+    color: #fff
 }
 
 body {
